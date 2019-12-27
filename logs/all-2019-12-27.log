@@ -1,0 +1,44 @@
+[2019-12-27 09:44:34,536] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:44:38,342] [autoreload.py:222] [autoreload:trigger_reload] [INFO]- F:\nemo\py_workspace\MyDjangoProject\api\urls.py changed, reloading.
+[2019-12-27 09:44:51,189] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:46:49,319] [autoreload.py:222] [autoreload:trigger_reload] [INFO]- F:\nemo\py_workspace\MyDjangoProject\api\urls.py changed, reloading.
+[2019-12-27 09:46:50,355] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:47:05,325] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:50:27,014] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:50:41,132] [autoreload.py:222] [autoreload:trigger_reload] [INFO]- F:\nemo\py_workspace\MyDjangoProject\api\urls.py changed, reloading.
+[2019-12-27 09:50:45,883] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:50:48,095] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /web/testdb HTTP/1.1" 200 307
+[2019-12-27 09:51:39,621] [autoreload.py:222] [autoreload:trigger_reload] [INFO]- F:\nemo\py_workspace\MyDjangoProject\api\views.py changed, reloading.
+[2019-12-27 09:51:40,533] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:52:06,204] [autoreload.py:222] [autoreload:trigger_reload] [INFO]- F:\nemo\py_workspace\MyDjangoProject\api\views.py changed, reloading.
+[2019-12-27 09:52:07,253] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:53:16,749] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:56:17,176] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:59:09,859] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:59:49,300] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 09:59:52,968] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /web/testdb HTTP/1.1" 200 307
+[2019-12-27 09:59:55,714] [log.py:228] [log:log_response] [WARNING]- Not Found: /web/testdba
+[2019-12-27 09:59:55,715] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /web/testdba HTTP/1.1" 404 179
+[2019-12-27 10:00:00,939] [log.py:228] [log:log_response] [WARNING]- Not Found: /api/testdba
+[2019-12-27 10:00:00,940] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /api/testdba HTTP/1.1" 404 179
+[2019-12-27 10:00:02,444] [log.py:228] [log:log_response] [WARNING]- Not Found: /api/testdba
+[2019-12-27 10:00:02,444] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /api/testdba HTTP/1.1" 404 179
+[2019-12-27 10:00:05,616] [log.py:228] [log:log_response] [WARNING]- Not Found: /api/testdba
+[2019-12-27 10:00:05,617] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /api/testdba HTTP/1.1" 404 179
+[2019-12-27 10:10:59,386] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 10:11:03,578] [log.py:228] [log:log_response] [ERROR]- Internal Server Error: /api/testdba
+[2019-12-27 10:11:03,578] [basehttp.py:157] [basehttp:log_message] [ERROR]- "GET /api/testdba HTTP/1.1" 500 9
+[2019-12-27 10:11:57,453] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 10:12:00,251] [log.py:228] [log:log_response] [WARNING]- Not Found: /api/testdba
+[2019-12-27 10:12:00,252] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /api/testdba HTTP/1.1" 404 13
+[2019-12-27 10:12:24,421] [autoreload.py:222] [autoreload:trigger_reload] [INFO]- F:\nemo\py_workspace\MyDjangoProject\api\views.py changed, reloading.
+[2019-12-27 10:12:25,383] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 10:15:25,350] [autoreload.py:598] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2019-12-27 10:15:29,007] [log.py:228] [log:log_response] [WARNING]- Not Found: /api/testdba
+[2019-12-27 10:15:29,009] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /api/testdba HTTP/1.1" 404 13
+[2019-12-27 10:15:30,294] [log.py:228] [log:log_response] [WARNING]- Not Found: /api/testdba
+[2019-12-27 10:15:30,295] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /api/testdba HTTP/1.1" 404 13
+[2019-12-27 10:15:32,376] [log.py:228] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2019-12-27 10:15:32,377] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 9
+[2019-12-27 10:15:33,544] [log.py:228] [log:log_response] [WARNING]- Not Found: /web/testdba
+[2019-12-27 10:15:33,544] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /web/testdba HTTP/1.1" 404 9

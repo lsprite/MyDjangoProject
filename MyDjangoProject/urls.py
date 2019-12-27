@@ -15,9 +15,12 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path, include
+import api
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('web/', include('web.urls')),
 ]
+handler404 = api.views.my_page_not_found
+handler500 = api.views.my_page_error

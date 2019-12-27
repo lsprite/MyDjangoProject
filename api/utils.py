@@ -6,6 +6,8 @@ from datetime import date, datetime
 def succeed(rows, msg):
     return json.dumps({'code': '10000', 'value': rows, 'message': msg})
 
+def error( msg):
+    return json.dumps({'code': '10000', 'value': "", 'message': msg})
 
 def dictfetchall(cursor):
     desc = cursor.description
