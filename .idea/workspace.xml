@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19b3a9f0-acfe-41fa-a5be-2303ef733ba2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/api_error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/api_error/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDjangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyDjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyDjangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+    <list default="true" id="19b3a9f0-acfe-41fa-a5be-2303ef733ba2" name="Default Changelist" comment="添加日志&#10;不同应用配置不同错误页面">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/all-2019-12-27.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/all-2019-12-27.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testdb.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testdb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,37 +19,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/testdb.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
+        <entry file="file://$PROJECT_DIR$/web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="399">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
-                <element signature="e#674#711#0" expanded="true" />
+                <element signature="e#674#702#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/utils.py">
+        <entry file="file://$PROJECT_DIR$/web/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="488">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#26#37#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,6 +60,9 @@
       <find>DEBUG</find>
       <find>web</find>
       <find>500</find>
+      <find>ITEM_PIPELINES</find>
+      <find>IMAGES_STORE</find>
+      <find>DOWNLOAD_DELAY</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,10 +76,7 @@
         <option value="$PROJECT_DIR$/mysql/base.py" />
         <option value="$PROJECT_DIR$/mysql/features.py" />
         <option value="$PROJECT_DIR$/api/jsonUtils.py" />
-        <option value="$PROJECT_DIR$/templates/testdb.html" />
         <option value="$PROJECT_DIR$/api/models.py" />
-        <option value="$PROJECT_DIR$/web/views.py" />
-        <option value="$PROJECT_DIR$/web/urls.py" />
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/templates/500.html" />
         <option value="$PROJECT_DIR$/api/utils.py" />
@@ -93,6 +86,13 @@
         <option value="$PROJECT_DIR$/templates/api_error/500.html" />
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/MyDjangoProject/urls.py" />
+        <option value="$PROJECT_DIR$/Find/Find/spiders/csdn_spider.py" />
+        <option value="$PROJECT_DIR$/conan/conan/items.py" />
+        <option value="$PROJECT_DIR$/conan/conan/settings.py" />
+        <option value="$PROJECT_DIR$/conan/conan/spiders/ConanSpider.py" />
+        <option value="$PROJECT_DIR$/web/urls.py" />
+        <option value="$PROJECT_DIR$/web/views.py" />
+        <option value="$PROJECT_DIR$/templates/testdb.html" />
       </list>
     </option>
   </component>
@@ -107,6 +107,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,28 +118,7 @@
             <path>
               <item name="MyDjangoProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyDjangoProject" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyDjangoProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyDjangoProject" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyDjangoProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyDjangoProject" type="462c0819:PsiDirectoryNode" />
-              <item name="MyDjangoProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyDjangoProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyDjangoProject" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyDjangoProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyDjangoProject" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="api_error" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyDjangoProject" type="b2602c69:ProjectViewProjectNode" />
@@ -149,7 +129,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,7 +137,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/api_error" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -266,7 +245,11 @@
       <option name="presentableId" value="Default" />
       <updated>1577153886072</updated>
       <workItem from="1577153887420" duration="12677000" />
-      <workItem from="1577349448303" duration="9553000" />
+      <workItem from="1577349448303" duration="11480000" />
+      <workItem from="1577415428334" duration="140000" />
+      <workItem from="1577430916840" duration="62000" />
+      <workItem from="1577430983362" duration="3002000" />
+      <workItem from="1577440304886" duration="553000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1577409424378</created>
@@ -282,28 +265,35 @@
       <option name="project" value="LOCAL" />
       <updated>1577410332729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加日志&#10;不同应用配置不同错误页面">
+      <created>1577413014418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577413014418</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22230000" />
+    <option name="totallyTimeSpent" value="27914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25555557" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2777778" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49888888" weight="0.32929516" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49888888" weight="0.5259096" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5011111" side_tool="true" weight="0.32929516" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49888888" visible="true" weight="0.35501653" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.49888888" visible="true" weight="0.35501653" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39911798" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -344,7 +334,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="django多个APP的urls设置" />
-    <option name="LAST_COMMIT_MESSAGE" value="django多个APP的urls设置" />
+    <MESSAGE value="添加日志&#10;不同应用配置不同错误页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加日志&#10;不同应用配置不同错误页面" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyDjangoProject$makemigrations.coverage" NAME="makemigrations Coverage Results" MODIFIED="1577352739739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -403,9 +394,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/migrations/0001_initial.py" />
     <entry file="file://D:/Program Files/Python/Python37/Lib/site-packages/django/db/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -416,16 +405,7 @@
     <entry file="file://$PROJECT_DIR$/api/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/features.py" />
     <entry file="file://D:/Program Files/Python/Python37/Lib/site-packages/django/core/management/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -454,27 +434,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/jsonUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/testdb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/base.py" />
+    <entry file="file://$PROJECT_DIR$/api/jsonUtils.py" />
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -508,16 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="e#674#702#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyDjangoProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -530,16 +481,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/all-2019-12-27.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -588,30 +529,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="399">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="17" />
           <folding>
             <element signature="e#26#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#674#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="361">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyDjangoProject/urls.py">
+    <entry file="file://$PROJECT_DIR$/Find/Find/spiders/csdn_spider.py" />
+    <entry file="file://$PROJECT_DIR$/Find/images/79436956.txt" />
+    <entry file="file://$PROJECT_DIR$/Find/images/81463841.txt" />
+    <entry file="file://$PROJECT_DIR$/conan/conan/items.py" />
+    <entry file="file://$PROJECT_DIR$/conan/conan/settings.py" />
+    <entry file="file://$PROJECT_DIR$/conan/conan/pipelines.py" />
+    <entry file="file://$PROJECT_DIR$/conan/conan/spiders/ConanSpider.py" />
+    <entry file="file://$PROJECT_DIR$/web/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="488">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding>
-            <element signature="e#674#711#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/testdb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="e#674#702#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -10,6 +10,10 @@
             id:{{ user.id }},姓名：{{ user.name }},sex: {{ user.sex }},createtime: {{ user.createtime }}
         </li>
     {% endfor %}
+    <form action="search" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="搜索">
+    </form>
 </ul>
 </body>
 </html>

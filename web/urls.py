@@ -19,4 +19,5 @@ from web import views
 
 urlpatterns = [
     path('testdb', views.testdb),
+    path('search', views.search),
 ]

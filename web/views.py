@@ -1,6 +1,7 @@
 import json
 
 from django.db import connection
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -19,3 +20,12 @@ def testdb(request):
     # return JsonResponse(rows, safe=False, json_dumps_params={'ensure_ascii': False})
     # return JsonResponse(succeed(rows, "1212"), safe=False, json_dumps_params={'ensure_ascii': False})
     # return HttpResponse(succeed(rows, "1212"))
+
+
+def search(request):
+    request.encoding = 'utf-8'
+    if 'q' in request.GET and request.GET['q']:
+        message = '你搜索的内容为: ' + request.GET['q']
+    else:
+        message = '你提交了空表单'
+    return HttpResponse("收到")
