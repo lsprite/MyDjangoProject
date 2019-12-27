@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<ul>
+    {% for user in users %}
+        <li>
+            id:{{ user.id }},姓名：{{ user.name }},sex: {{ user.sex }},createtime: {{ user.createtime }}
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
