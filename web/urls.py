@@ -16,6 +16,7 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path
 from web import views
+from django.conf.urls import url
 
 urlpatterns = [
     path('testdb', views.testdb),

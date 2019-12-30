@@ -1,7 +1,7 @@
 import decimal
 import json
-from datetime import date, datetime
 import re
+from datetime import date, datetime
 
 
 def succeed(rows, msg):
@@ -9,7 +9,11 @@ def succeed(rows, msg):
 
 
 def error(msg):
-    return json.dumps({'code': '10000', 'value': "", 'message': msg})
+    return json.dumps({'code': '-1', 'value': "", 'message': msg})
+
+
+def ajax_res(code, value, msg):
+    return json.dumps({'code': code, 'value': value, 'message': msg})
 
 
 def dictfetchall(cursor):

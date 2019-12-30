@@ -62,6 +62,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'MyDjangoProject.global_variable.global_setting',
             ],
             'builtins': [
                 # from django.templatetags import static
@@ -130,9 +131,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static' ## 新增行
+STATIC_ROOT = 'static'  ## 新增行
 STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, '/static/'), ##修改地方
+    os.path.join(BASE_DIR, '/static/'),  ##修改地方
 ]
 
 # 开启日志

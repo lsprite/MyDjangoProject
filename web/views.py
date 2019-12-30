@@ -3,11 +3,10 @@ import json
 from django.db import connection
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.views.decorators import csrf
-from django import forms
 
-# Create your views here.
-from api.utils import dictfetchall, ComplexEncoder
+from MyDjangoProject import global_variable
+from api.utils import dictfetchall, ComplexEncoder, ajax_res, check_email
+from api.send_email import send_email
 
 
 def testdb(request):
@@ -49,12 +48,29 @@ def search(request):
 
 def search_post(request):
     request.encoding = 'utf-8'
-    if 'subject' in request.POST and request.POST['subject']:
-        subject = '主题:' + request.POST['subject']
-    elif 'msg' in request.POST and request.POST['msg']:
-        msg = '你搜索的内容为: ' + request.POST['msg']
-    elif 'to_addr' in request.POST and request.POST['to_addr']:
-        to_addr = '你搜索的内容为: ' + request.POST['to_addr']
+    subject = request.POST['subject']
+    msg = request.POST['msg']
+    to_addr = request.POST['to_addr']
+    if 'subject' not in request.POST or not subject:
+        return return_error_HttpResponse(request, "", "主题不能为空")
+    elif 'msg' not in request.POST or not msg:
+        return return_error_HttpResponse(request, "", "内容不能为空")
+    elif 'to_addr' not in request.POST or not to_addr:
+        return return_error_HttpResponse(request, "", "接收人不能为空")
+    elif 'to_addr' in request.POST and to_addr:
+        if not check_email(to_addr):
+            return return_error_HttpResponse(request, "", "请输入正确的邮箱格式")
+    if send_email(to_addr, subject, msg):
+        return return_succeed_HttpResponse(request, "", "发送成功")
     else:
-        message = '你提交了空表单'
-    return HttpResponse(subject + msg + to_addr)
+        return return_error_HttpResponse(request, "", "发送失败")
+
+
+def return_succeed_HttpResponse(request, value, message):
+    return HttpResponse(ajax_res(global_variable.global_setting(request)['RES_CODE'], value, message),
+                        content_type='application/json')
+
+
+def return_error_HttpResponse(request, value, message):
+    return HttpResponse(ajax_res(global_variable.global_setting(request)['ERROR_CODE'], value, message),
+                        content_type='application/json')

@@ -12,17 +12,22 @@
             $('#formlogin').submit(function () {
                 $.ajax({
                     type: "POST",
-                    dataType: "text", //数据类型
+                    dataType: "json",
                     data: {
-                        'subject': subject,
-                        'msg': msg,
-                        'to_addr': to_addr
+                        'subject': $("#subject").val(),
+                        'msg': $("#msg").val(),
+                        'to_addr': $("#to_addr").val()
                     },
-                    url: '/search_post/',
+                    url: 'search_post',
                     cache: false,
                     success: function (result) {
                         {#$("#mainContent").html(result);#}
-                        alert("true");
+                        {#alert(result.code);#}
+                        if (result.code =={{ RES_CODE }}) {
+                            alert('完美')
+                        } else {
+                            $("#error").html(result.message);
+                        }
                     },
                     error: function () {
                         alert("false");
@@ -42,12 +47,15 @@
             id:{{ user.id }},姓名：{{ user.name }},sex: {{ user.sex }},createtime: {{ user.createtime }}
         </li>
     {% endfor %}
+    <br/>
+    {{ RES_CODE }}
+    <br/>
     <form id="formlogin" method="post">
         {% csrf_token %}
-        主题:<input type="text" name="subject"><br/>
-        内容:<input type="text" name="msg"><br/>
-        接收人:<input type="text" name="to_addr"><br/>
-        <p style="color: red;">{{ errors.0 }}</p> {#“.0”的作用是在界面显示错误信息时，可以去掉前面的点"·"#}
+        主题:<input type="text" id="subject"><br/>
+        内容:<input type="text" id="msg"><br/>
+        接收人:<input type="text" id="to_addr"><br/>
+        <p style="color: red;" id="error"></p>
         <input type="submit" value="发送">
     </form>
 </ul>
