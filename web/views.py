@@ -4,6 +4,7 @@ from django.db import connection
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators import csrf
+from django import forms
 
 # Create your views here.
 from api.utils import dictfetchall, ComplexEncoder
@@ -48,8 +49,12 @@ def search(request):
 
 def search_post(request):
     request.encoding = 'utf-8'
-    if 'q' in request.POST and request.POST['q']:
-        message = '你搜索的内容为: ' + request.POST['q']
+    if 'subject' in request.POST and request.POST['subject']:
+        subject = '主题:' + request.POST['subject']
+    elif 'msg' in request.POST and request.POST['msg']:
+        msg = '你搜索的内容为: ' + request.POST['msg']
+    elif 'to_addr' in request.POST and request.POST['to_addr']:
+        to_addr = '你搜索的内容为: ' + request.POST['to_addr']
     else:
         message = '你提交了空表单'
-    return HttpResponse(message)
+    return HttpResponse(subject + msg + to_addr)

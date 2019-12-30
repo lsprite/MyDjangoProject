@@ -2,6 +2,38 @@
 <html>
 <head>
     <title></title>
+    {#    {% load static %}#}
+    <script type='text/javascript' src="{% static 'js/jquery-3.4.1.js' %} "></script>
+    <script>
+        $(document).ready(function () {
+            $.ajaxSetup({
+                data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
+            });
+            $('#formlogin').submit(function () {
+                $.ajax({
+                    type: "POST",
+                    dataType: "text", //数据类型
+                    data: {
+                        'subject': subject,
+                        'msg': msg,
+                        'to_addr': to_addr
+                    },
+                    url: '/search_post/',
+                    cache: false,
+                    success: function (result) {
+                        {#$("#mainContent").html(result);#}
+                        alert("true");
+                    },
+                    error: function () {
+                        alert("false");
+                    }
+                });
+                return false;
+            });
+
+        });
+    </script>
+
 </head>
 <body>
 <ul>
@@ -10,10 +42,13 @@
             id:{{ user.id }},姓名：{{ user.name }},sex: {{ user.sex }},createtime: {{ user.createtime }}
         </li>
     {% endfor %}
-    <form action="search_post" method="post">
+    <form id="formlogin" method="post">
         {% csrf_token %}
-        <input type="text" name="q">
-        <input type="submit" value="搜索">
+        主题:<input type="text" name="subject"><br/>
+        内容:<input type="text" name="msg"><br/>
+        接收人:<input type="text" name="to_addr"><br/>
+        <p style="color: red;">{{ errors.0 }}</p> {#“.0”的作用是在界面显示错误信息时，可以去掉前面的点"·"#}
+        <input type="submit" value="发送">
     </form>
 </ul>
 </body>

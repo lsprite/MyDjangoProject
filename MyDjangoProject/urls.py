@@ -16,11 +16,17 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path, include
 import api
+from django.conf.urls import url
+from django.views import static
+from django.conf import settings
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('web/', include('web.urls')),
+    url(r'^static/(?P<path>.*)$', static.serve,
+        {'document_root': settings.STATIC_ROOT}, name='static'),
 ]
+
 handler404 = api.views.my_page_not_found
 handler500 = api.views.my_page_error

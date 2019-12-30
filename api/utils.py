@@ -1,13 +1,16 @@
 import decimal
 import json
 from datetime import date, datetime
+import re
 
 
 def succeed(rows, msg):
     return json.dumps({'code': '10000', 'value': rows, 'message': msg})
 
-def error( msg):
+
+def error(msg):
     return json.dumps({'code': '10000', 'value': "", 'message': msg})
+
 
 def dictfetchall(cursor):
     desc = cursor.description
@@ -25,3 +28,11 @@ class ComplexEncoder(json.JSONEncoder):
             return float(obj)
         else:
             return json.JSONEncoder.default(self, obj)
+
+
+def check_email(addr):
+    if re.match(r'^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.[com,cn,net]{1,3}$', addr):
+        # if re.match(r'[0-9a-zA-Z_]{0,19}@163.com',text):
+        return True
+    else:
+        return False

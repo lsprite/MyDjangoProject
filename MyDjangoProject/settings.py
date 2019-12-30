@@ -63,6 +63,12 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'builtins': [
+                # from django.templatetags import static
+                # 在模板中设置 static 后，以后在页面中使用
+                # static 就不需要每个页面都使用 {% load static %}加载
+                'django.templatetags.static'
+            ],
         },
     },
 ]
@@ -124,8 +130,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static' ## 新增行
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+  os.path.join(BASE_DIR, '/static/'), ##修改地方
 ]
 
 # 开启日志
